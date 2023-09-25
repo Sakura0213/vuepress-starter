@@ -62,17 +62,13 @@ export default defineUserConfig({
         link: "/test",
       },
     ],
-    plugins: [
-      //回到开头
-      backToTopPlugin(),
-      //链接末尾加图标
-      externalLinkIconPlugin({
-        // 配置项
-      }),
-      //图片放大
-      mediumZoomPlugin({
-        // 配置项
-      }),
-    ],
   }),
+  plugins: [
+    //回到开头
+    backToTopPlugin(),
+    //链接末尾加图标
+    externalLinkIconPlugin(),
+    //图片放大
+    mediumZoomPlugin(),
+  ],
 });
