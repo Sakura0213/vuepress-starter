@@ -2,6 +2,11 @@ import { defineUserConfig, defaultTheme } from "vuepress";
 import { backToTopPlugin } from "@vuepress/plugin-back-to-top";
 import { externalLinkIconPlugin } from "@vuepress/plugin-external-link-icon";
 import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
+import { searchPlugin } from "@vuepress/plugin-search";
+import { shikiPlugin } from "@vuepress/plugin-shiki";
+import { copyCodePlugin } from "vuepress-plugin-copy-code2";
+
+
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -14,11 +19,13 @@ export default defineUserConfig({
     },
   },
   theme: defaultTheme({
+    lastUpdatedText: "上次更新",
+    contributorsText: "贡献者",
     // 默认主题配置
     navbar: [
       {
-        text: "个人页",
-        link: "/",
+        text: "HOME",
+        link: "/HOME",
       },
       {
         text: "社交平台",
@@ -37,7 +44,7 @@ export default defineUserConfig({
     sidebar: [
       {
         text: "首页",
-        link: "/homePage",
+        link: "/",
       },
       {
         text: "博客手册",
@@ -70,5 +77,11 @@ export default defineUserConfig({
     externalLinkIconPlugin(),
     //图片放大
     mediumZoomPlugin(),
+    //搜索
+    searchPlugin(),
+    //VScode的代码高亮
+    shikiPlugin(),
+    //代码复制
+    copyCodePlugin(),
   ],
 });
