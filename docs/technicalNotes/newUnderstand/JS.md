@@ -54,4 +54,4 @@
 
 1
 
-![pimon](/images/pimon.jpg)
+![pimen](/images/pimen.jpg)

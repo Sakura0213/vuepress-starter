@@ -1,1 +1,1 @@
-![pimon](/images/pimen.jpg)
+![pimen](/images/pimen.jpg)
