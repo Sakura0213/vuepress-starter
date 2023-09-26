@@ -4,7 +4,7 @@ heroImage: /images/pimen.jpg
 heroText: 猫星的博客
 tagline: 你好，hello!
 actions:
-  - text: 快速上手 →
+  - text: 首页 →
     link: /
     type: primary
 features:

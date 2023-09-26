@@ -6,8 +6,6 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import { shikiPlugin } from "@vuepress/plugin-shiki";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 
-
-
 export default defineUserConfig({
   lang: "zh-CN",
   title: "猫星的博客",
@@ -51,22 +49,27 @@ export default defineUserConfig({
         link: "/vuepressConfig",
       },
       {
-        text: "notes",
-        link: "/notes", //默认为README.md
+        text: "记录",
+        link: "/records",
+        collapsible: true,
         children: [
           {
-            text: "2023",
-            link: "/notes/2023",
+            text: "2023.09",
+            link: "/records/202309",
           },
           {
-            text: "2024",
-            link: "/notes/2024",
+            text: "2023.10",
+            link: "/records/202310",
+          },
+          {
+            text: "2023.11",
+            link: "/records/202311",
+          },
+          {
+            text: "2023.12",
+            link: "/records/202312",
           },
         ],
-      },
-      {
-        text: "测试",
-        link: "/test",
       },
     ],
   }),

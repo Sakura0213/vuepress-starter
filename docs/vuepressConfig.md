@@ -1,1 +1,1 @@
-# vuepress配置
+# vuepress 配置
