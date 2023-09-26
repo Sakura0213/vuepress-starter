@@ -98,6 +98,36 @@ export default defineUserConfig({
         text: "小视频",
         link: "/video",
       },
+      {
+        text: "笔记",
+        link: "/technicalNotes",
+        collapsible: true,
+        children: [
+          {
+            text: "新理解",
+            link: "/technicalNotes/newUnderstand",
+            collapsible: true,
+            children: [
+              {
+                text: "HTML",
+                link: "/technicalNotes/newUnderstand/HTML",
+              },
+              {
+                text: "CSS",
+                link: "/technicalNotes/newUnderstand/CSS",
+              },
+              {
+                text: "JS",
+                link: "/technicalNotes/newUnderstand/JS",
+              },
+            ],
+          },
+          {
+            text: "vuepress",
+            link: "/technicalNotes/vuepress",
+          },
+        ],
+      },
     ],
   }),
   plugins: [
