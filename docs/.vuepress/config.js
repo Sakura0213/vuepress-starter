@@ -45,31 +45,58 @@ export default defineUserConfig({
         link: "/",
       },
       {
-        text: "博客手册",
-        link: "/vuepressConfig",
-      },
-      {
-        text: "记录",
-        link: "/records",
+        text: "小记录",
+        link: "/notes",
         collapsible: true,
         children: [
           {
             text: "2023.09",
-            link: "/records/202309",
+            link: "/notes/202309",
           },
           {
             text: "2023.10",
-            link: "/records/202310",
+            link: "/notes/202310",
           },
           {
             text: "2023.11",
-            link: "/records/202311",
+            link: "/notes/202311",
           },
           {
             text: "2023.12",
-            link: "/records/202312",
+            link: "/notes/202312",
           },
         ],
+      },
+      {
+        text: "小画册",
+        link: "/picture",
+      },
+      {
+        text: "小安利",
+        link: "/share",
+      },
+      {
+        text: "二次元",
+        link: "/AGN",
+        collapsible: true,
+        children: [
+          {
+            text: "动漫",
+            link: "/AGN/Animation",
+          },
+          {
+            text: "漫画",
+            link: "/AGN/Comic",
+          },
+          {
+            text: "轻小说",
+            link: "/AGN/Novel",
+          },
+        ],
+      },
+      {
+        text: "小视频",
+        link: "/video",
       },
     ],
   }),
