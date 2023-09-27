@@ -146,6 +146,7 @@ export default defineUserConfig({
       components: [
         //集成B站
         "BiliBili",
+        "SiteInfo",
       ],
       rootComponents: {
         //回到开头
