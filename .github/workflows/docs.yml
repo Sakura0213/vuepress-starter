@@ -24,7 +24,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
-          repo： Sakura0213/Sakura0213.github.io
+          repo： Sakura0213.github.io
           target_branch: master
           build_dir: docs/.vuepress/dist
         env:
