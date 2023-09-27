@@ -27,4 +27,4 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           REPOSITORY_NAME: Sakura0213/Sakura0213.github.io
           BRANCH: master
-          FOLDER: dist
+          FOLDER: docs/.vuepress/dist
