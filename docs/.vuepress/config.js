@@ -1,10 +1,10 @@
 import { defineUserConfig, defaultTheme } from "vuepress";
-import { backToTopPlugin } from "@vuepress/plugin-back-to-top";
 import { externalLinkIconPlugin } from "@vuepress/plugin-external-link-icon";
 import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
 import { searchPlugin } from "@vuepress/plugin-search";
-import { shikiPlugin } from "@vuepress/plugin-shiki";
 import { copyCodePlugin } from "vuepress-plugin-copy-code2";
+import { componentsPlugin } from "vuepress-plugin-components";
+import { tocPlugin } from "@vuepress/plugin-toc";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -19,7 +19,9 @@ export default defineUserConfig({
   theme: defaultTheme({
     lastUpdatedText: "上次更新",
     contributorsText: "贡献者",
-    // 默认主题配置
+    themePlugins: {
+      backToTop: false,
+    },
     navbar: [
       {
         text: "HOME",
@@ -131,17 +133,26 @@ export default defineUserConfig({
     ],
   }),
   plugins: [
-    //回到开头
-    backToTopPlugin(),
     //链接末尾加图标
     externalLinkIconPlugin(),
     //图片放大
     mediumZoomPlugin(),
     //搜索
     searchPlugin(),
-    //VScode的代码高亮
-    shikiPlugin(),
     //代码复制
     copyCodePlugin(),
+    //组件库
+    componentsPlugin({
+      components: [
+        //集成B站
+        "BiliBili",
+      ],
+      rootComponents: {
+        //回到开头
+        backToTop: true,
+      },
+    }),
+    //
+    tocPlugin(),
   ],
 });

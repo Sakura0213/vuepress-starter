@@ -723,6 +723,17 @@
     "@vuepress/utils" "2.0.0-beta.67"
     vue "^3.3.4"
 
+"@vuepress/plugin-toc@^2.0.0-beta.67":
+  version "2.0.0-beta.67"
+  resolved "https://registry.npmjs.org/@vuepress/plugin-toc/-/plugin-toc-2.0.0-beta.67.tgz"
+  integrity sha512-77/A/xeh/4eziIIDpcS8UTb6tQAg0+0FzS9RB2rAkCqgfU48YToAXw58n2diOObgRsuf2jnfLZ6hfHMWAXLtTA==
+  dependencies:
+    "@vuepress/client" "2.0.0-beta.67"
+    "@vuepress/core" "2.0.0-beta.67"
+    "@vuepress/utils" "2.0.0-beta.67"
+    vue "^3.3.4"
+    vue-router "^4.2.4"
+
 "@vuepress/shared@2.0.0-beta.67":
   version "2.0.0-beta.67"
   resolved "https://registry.npmjs.org/@vuepress/shared/-/shared-2.0.0-beta.67.tgz"
@@ -2613,7 +2624,7 @@ vuepress-plugin-auto-catalog@^2.0.0-beta.237:
     vuepress-plugin-sass-palette "2.0.0-beta.237"
     vuepress-shared "2.0.0-beta.237"
 
-vuepress-plugin-components@2.0.0-beta.237:
+vuepress-plugin-components@^2.0.0-beta.237, vuepress-plugin-components@2.0.0-beta.237:
   version "2.0.0-beta.237"
   resolved "https://registry.npmjs.org/vuepress-plugin-components/-/vuepress-plugin-components-2.0.0-beta.237.tgz"
   integrity sha512-EjXik6EJYi84+gXK6YodYKP9+f5DVCAOqKvPoXRS1T02V7lN9saJO8eShxinazYker/oIvRrGU+B4u70nwBR3A==
