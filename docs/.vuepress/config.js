@@ -147,6 +147,8 @@ export default defineUserConfig({
         //集成B站
         "BiliBili",
         "SiteInfo",
+        "AudioPlayer",
+        "VideoPlayer",
       ],
       rootComponents: {
         //回到开头
