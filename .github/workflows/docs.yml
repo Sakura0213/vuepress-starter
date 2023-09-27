@@ -21,10 +21,10 @@ jobs:
       - name: Build
         run:  yarn build
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          REPOSITORY_NAME: Sakura0213/Sakura0213.github.io
-          BRANCH: master
-          FOLDER: docs/.vuepress/dist
+          target_branch: master
+          build_dir: docs/.vuepress/dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
